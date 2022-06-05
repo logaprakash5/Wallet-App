@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet application</title>
+    <style>
+        #div1{
+        background-image: url("images/signup.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: relative;
+            min-height: 700px;
+    }
+    h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            font-size: 50px;
+        }
+        
+    * {
+            box-sizing: border-box;
+        }
+    .container {
+            position: absolute;
+            width: 25%;
+            margin-left: 70%;
+            margin-top: 7%;
+            max-width: 300px;
+            padding: 16px;
+            background-color: white;
+    }
+
+    input[type=text], input[type=password], select, input[type=text] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, select, input[type=text]:focus{
+            background-color: #ddd;
+            outline: none;
+    }
+    .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+    }
+    </style>
+</head>
+<body>
+    <h1>E-WALLET APPLICATION</h1>
+    
+    <div id="div1">
+    <form class="container" action="home.html" id="form">
+        <h1>Sign up</h1>
+        <input type="text" placeholder="Name" id="name">
+        <br>
+        <input type="text" placeholder="E-mail" name="email" id="email">
+        <br>
+        <select name="bank" id="bank" >
+            <option value="sbi">State Bank of India</option>
+            <option value="hdfc">Hdfc bank</option>
+            <option value="axis">Axis Bank</option>
+            <option value="indian">Indian bank</option>
+          </select>
+        <br>
+        <input type="text" placeholder="Account number" name="acc_num" id="acnum">
+        <br>
+        <input type="password" placeholder="Password" name="password" id="password">
+        <br>
+        <input type="password" placeholder="Confirm password" name="con_pass" >
+        <br>
+        <button class="btn" type="submit">Login</button>
+    </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet application</title>
+    <link rel="stylesheet" href="nav_bar_style.css">
+    <link rel="stylesheet" href="forms_style.css">
+    <style>
+        .btn {
+            background-color: #4CAF20;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.9;
+    }
+    #tit{
+        font-size: 45px;
+        text-align: center;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <h1>E-WALLET APPLICATION</h1>
+    <ul >
+        <li>
+            <a href="home.html" >Home</a>
+        </li>
+        <li>
+            <a href="add_wallet_points_wallet.html" >Add Wallet points</a>
+        </li>
+        <li class="active">
+            <a href="check_balance_wallet.html">Check Balance</a>
+        </li>
+        <li>
+            <a href="transaction_list_wallet.html">Transaction List</a>
+        </li>
+        <li>
+            <a href="payments_wallet.html">Payments</a>
+        </li>
+        <li>
+            <a href="login_wallet.html">Logout</a>
+        </li>
+    </ul>
+    <form class="div1">
+        <h1 id="tit">Check Balance here!</h1>
+        <input type="text" id="pin" name="pin" placeholder="Enter Pin">
+        <br>
+        <input type="password" placeholder="Password">
+        <br>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+</body>
+</html>
