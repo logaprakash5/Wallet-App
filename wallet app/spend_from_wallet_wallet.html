@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet application</title>
+    <link rel="stylesheet" href="nav_bar_style.css">
+    <style>
+        input[type=text], input[type=password] {
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            width: 18%;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .div1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            margin-left: 610px;
+        }
+        .btn1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            margin-left: 135px;
+        }
+    </style>
+</head>
+<body>
+    <h1>E-WALLET APPLICATION</h1>
+    <ul >
+        <li>
+            <a href="home.html" >Home</a>
+        </li>
+        <li>
+            <a href="add_wallet_points_wallet.html" >Add Wallet points</a>
+        </li>
+        <li>
+            <a href="check_balance_wallet.html">Check Balance</a>
+        </li>
+        <li>
+            <a href="transaction_list_wallet.html">Transaction List</a>
+        </li>
+        <li class="active">
+            <a href="payments_wallet.html">Payments</a>
+        </li>
+        <li>
+            <a href="login_wallet.html">Logout</a>
+        </li>
+    </ul>
+    <form class="div1" style="margin-top: 100px;">
+        <input type="text" id="pin" name="pin" placeholder="Enter Pin">
+        <br>
+        <input type="text" id="amount" name="amount" placeholder="Enter Amount">
+        <br>
+        
+    </form>
+    <button class="btn">Submit</button>
+    <button class="btn1" onclick = "history.back()">Cancel</button>
+</body>
+</html>

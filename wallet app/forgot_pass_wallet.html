@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet application</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            font-size: 50px;
+        }
+        
+    * {
+            box-sizing: border-box;
+        }
+    .container {
+            position: absolute;
+            width: 25%;
+            margin-left: 40%;
+            margin-top: 5%;
+            max-width: 300px;
+            padding: 16px;
+            background-color: white;
+    }
+
+    input[type=text], input[type=password], select, input[type=text] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, select, input[type=text]:focus{
+            background-color: #ddd;
+            outline: none;
+    }
+    .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            opacity: 0.9;
+            float: left;
+    }
+    .btn1 {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            opacity: 0.9;
+            float: right;
+    }
+    </style>
+</head>
+<body>
+    <h1>E-WALLET APPLICATION</h1>
+    
+    <div id="div1">
+    <form class="container" >
+        <center>
+            <h3 style="font-family: sans-serif;">Set up password</h3>
+        </center>
+        <br>
+        <input type="text" placeholder="Password" name="password" id="password">
+        <br>
+        <input type="password" placeholder="Confirm password" name="con_pass" id="con_pass">
+        <br>
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn1" type="submit">Cancel</button>
+
+    </form>
+    </div>
+</body>
+</html>

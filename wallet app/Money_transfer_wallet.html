@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet application</title>
+        <link rel="stylesheet" href="nav_bar_style.css">
+        <link rel="stylesheet" href="pay_option_style.css">
+        <link rel="stylesheet" href="forms_style.css">
+</head>
+<body>
+    <h1>E-WALLET APPLICATION</h1>
+    <ul >
+        <li>
+            <a href="home.html" >Home</a>
+        </li>
+        <li>
+            <a href="add_wallet_points_wallet.html" >Add Wallet points</a>
+        </li>
+        <li>
+            <a href="check_balance_wallet.html">Check Balance</a>
+        </li>
+        <li>
+            <a href="transaction_list_wallet.html">Transaction List</a>
+        </li>
+        <li class="active">
+            <a href="payments_wallet.html">Payments</a>
+        </li>
+        <li>
+            <a href="login_wallet.html">Logout</a>
+        </li>
+    </ul>
+    <form>
+    <br>
+    <input type="text" placeholder="Account Number" name="acc_num" id="acc_num">
+    <br>
+    <select name="bank" id="bank" >
+        <option value="sbi">State Bank of India</option>
+        <option value="hdfc">Hdfc bank</option>
+        <option value="axis">Axis Bank</option>
+        <option value="indian">Indian bank</option>
+      </select>
+      <br>
+    <input type="text" placeholder="Amount" name="amount" id="amount">
+    <br>
+    <input type="password" placeholder="password">
+    </form>
+    <div class="dropdown">
+        <button class="dropbtn">Pay options</button>
+        <div class="dropdown-content">
+        <a href="spend_from_wallet_wallet.html">Spend from wallet</a>
+        <a href="#">QR code</a>
+        </div>
+    </div>
+    <button class="dropbtn1" onclick="history.back()">Cancel</button>
+</body>
+</html>
